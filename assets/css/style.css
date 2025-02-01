@@ -1505,3 +1505,29 @@ footer .credits a {
 
   font-size: large;
 }
+
+#image1 {
+  position: relative;
+}
+
+#image1:hover::after {
+  content: "Content about the project....blah blah blah";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  opacity: 80%;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: 500;
+}
