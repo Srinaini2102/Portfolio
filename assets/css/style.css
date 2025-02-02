@@ -1531,3 +1531,104 @@ footer .credits a {
   height: 100%;
   font-weight: 500;
 }
+#project {
+  position: relative;
+}
+
+#project:hover::after {
+  content: "Content about the project....blah blah blah";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #510104;
+  opacity: 80%;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: 700;
+}
+
+.logo{
+  width: 50%;
+  height: 50%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-box {
+  flex-grow: 1; /* Ensures equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: white;
+  min-height: 350px; /* Adjust as needed */
+}
+
+/* Increase logo size */
+.service-ico {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-ico img {
+  width: 100%; /* Makes the image take full width of .service-ico */
+  height: auto; /* Maintains aspect ratio */
+  max-height: 100px; /* Ensures it doesn't overflow */
+}
+
+.work-box {
+  flex-grow: 1; /* Ensures equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: white;
+  min-height: 450px;
+  max-height: 500px; /* Ensures a minimum height */
+}
+
+/* Ensure images take consistent height */
+.work-img img {
+  
+  width: 400px;
+  height: 200px; /* Set a fixed height for uniformity */
+  object-fit: cover; /* Ensures the image scales properly */
+}
+
+/* Make sure the content area stays aligned */
+.work-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.swiper {
+  width: 600px;
+  height: 300px;
+}
