@@ -1558,8 +1558,8 @@ footer .credits a {
 }
 
 .logo{
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
 }
 .row {
   display: flex;
@@ -1592,6 +1592,10 @@ footer .credits a {
   justify-content: center;
   align-items: center;
 }
+/*#services.service-box{
+  width: 150px;
+  height: 150px;
+}*/
 
 .service-ico img {
   width: 100%; /* Makes the image take full width of .service-ico */
@@ -1680,4 +1684,5 @@ footer .credits a {
 
 #box:hover::before {
   background-color: rgba(160, 50, 50, 0.9); /* Black overlay with 80% opacity */
+  content: jkjk
 }
